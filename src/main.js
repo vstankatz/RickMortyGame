@@ -1,3 +1,5 @@
 import $ from 'jquery';
-import $ from 'popper.js';
-import $ from 'bootstrap';
+import 'popper.js';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
