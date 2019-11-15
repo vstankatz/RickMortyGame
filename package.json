@@ -11,7 +11,7 @@
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michael Wells",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -32,5 +32,13 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael-Wayne-Wells/npm-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Michael-Wayne-Wells/npm-template/issues"
+  },
+  "homepage": "https://github.com/Michael-Wayne-Wells/npm-template#readme"
 }

@@ -13,16 +13,20 @@
         <label>age</label>
         <input type="number" class="form-control" id="user-age" placeholder="Enter age">
       </div>
+      <div class="form-group">
+        <label>At what age will you die?</label>
+        <input type="number" class="form-control" id="user-death-age" placeholder="Enter age">
+      </div>
       <button type="submit" >Submit</button>
     </form>
-    <form id="#aging-selector">
-      <select class="form-control">
-  </select>
+    <form>
+      <select class="form-control" id="aging-selector">
+      </select>
   <button type="button" class="btn btn-dark">Find your age!</button>
     </form>
 
     <div class="results">
-      
+      <h1>You are <span id="other-age"></span> on <span id="planet"></h1>
     </div>
 
   </body>
