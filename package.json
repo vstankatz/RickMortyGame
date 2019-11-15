@@ -1,5 +1,5 @@
 {
-  "name": "Galactic Calculator",
+  "name": "galactic-calculator",
   "version": "1.0.0",
   "description": "Determines age off earth",
   "main": "index.js",

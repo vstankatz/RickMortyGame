@@ -1,6 +1,6 @@
-# _Name_
+# _Super Galactic Age Calculator_
 
-#### _Short Description _
+#### _Find out your age in a place far far away.  _
 
 #### By _**Michael Wells**_
 
