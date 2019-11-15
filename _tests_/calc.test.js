@@ -9,6 +9,6 @@ describe('user', () => {
 
   test('users age on venus', () => {
     let user = new User('mike', 32);
-    expect(user.venusAge(user.age)).toEqual(52)
+    expect(user.venusAge(user.age)).toEqual(51);
   })
 })

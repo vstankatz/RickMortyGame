@@ -8,6 +8,6 @@ export class User {
     return Math.floor(age * (1 / .24));
   }
   venusAge(age) {
-    
+    return Math.floor(age * (1 / .62));
   }
 }
