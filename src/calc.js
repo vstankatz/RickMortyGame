@@ -1,16 +1,12 @@
 export class User {
-  constructor(name, age) {
+  constructor(name, age, death) {
     this.name = name;
     this.age = age;
-    this.death = death
+    this.death = death;
   }
 
   mercuryAge(age) {
     return Math.floor(age * (1 / .24));
-  }
-
-  yearsLeft(death, age) {
-    return Match.floor(death - age)
   }
   venusAge(age) {
     return Math.floor(age * (1 / .62));
@@ -21,6 +17,8 @@ export class User {
   jupiterAge(age) {
     return Math.floor(age / 11.86);
   }
-
+  yearsLeft(death, age) {
+    return Math.floor(death - age)
+  }
 
 }
