@@ -10,4 +10,8 @@ export class User {
   venusAge(age) {
     return Math.floor(age * (1 / .62));
   }
+  marsAge(age) {
+    return Math.floor(age * 1.88);
+  }
 }
+  
