@@ -3,22 +3,24 @@ export class User {
     this.name = name;
     this.age = age;
     this.death = death;
+    this.aging = {
+      mercury: 4.16,
+      venus: 1.61,
+      mars: .532,
+      jupiter: .084
+    }
   }
-
-  mercuryAge(age) {
-    return Math.floor(age * (1 / .24));
+  planetAge(age, aging) {
+    return Math.floor(age * aging);
   }
-  venusAge(age) {
-    return Math.floor(age * (1 / .62));
-  }
-  marsAge(age) {
-    return Math.floor(age / 1.88);
-  }
-  jupiterAge(age) {
-    return Math.floor(age / 11.86);
-  }
-  yearsLeft(death, age) {
-    return Math.floor(death - age)
+  deathClock(death, age) {
+    let yearsLeft = Math.floor(death - age);
+    let pastExp = Math.floor(age - death)
+    if(yearsLeft < 0) {
+      return pastExp
+    } else {
+      return yearsLeft;
+    }
   }
 
 }
