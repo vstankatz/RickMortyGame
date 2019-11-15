@@ -19,6 +19,9 @@ describe('user', () => {
     let user = new User('mike', 32);
     expect(user.jupiterAge(user.age)).toEqual(2);
   })
-
+test('uesrs years left to live', () => {
+  let user = new User('mike', 32, 70);
+  expect(user.yearsLeft(user.venusAge(user.age),user.venusAge(user.death)).toEqual(61);
+})
 
 })
