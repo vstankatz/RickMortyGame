@@ -11,4 +11,10 @@ describe('user', () => {
     let user = new User('mike', 32);
     expect(user.venusAge(user.age)).toEqual(51);
   })
+  test('users age on mars', () => {
+    let user = new User('mike', 32);
+    expect(user.marsAge(user.age)).toEqual(60);
+  })
+
+
 })
