@@ -10,6 +10,10 @@ export class User {
       jupiter: .084
     }
   }
+
+
+
+
   planetAge(age, aging) {
     return Math.floor(age * aging);
   }
