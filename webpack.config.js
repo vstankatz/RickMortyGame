@@ -19,7 +19,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Galactic Calculator',
+      title: '',
       template: './src/index.html',
       inject: 'body'
     })
@@ -35,9 +35,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude:[ /node_modules/,
-          /spec/
-        ],
+        exclude: /node_modules/,
         loader: "eslint-loader"
       }
     ]

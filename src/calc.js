@@ -8,20 +8,17 @@ export class User {
       venus: 1.61,
       mars: .532,
       jupiter: .084
-    }
+    };
   }
-
-
-
 
   planetAge(age, aging) {
     return Math.floor(age * aging);
   }
   deathClock(death, age) {
     let yearsLeft = Math.floor(death - age);
-    let pastExp = Math.floor(age - death)
+    let pastExp = Math.floor(age - death);
     if(yearsLeft < 0) {
-      return pastExp
+      return pastExp;
     } else {
       return yearsLeft;
     }

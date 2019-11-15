@@ -1,25 +1,24 @@
 {
-  "name": "galactic-calculator",
+  "name": "",
   "version": "1.0.0",
-  "description": "Determines age off earth",
-  "main": "index.js",
+  "description": "",
+  "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "start": "webpack-dev-server --open",
     "lint": "eslint src/*.js",
-    "test": "jest",
-    "debug": "node --inspect node_modules/.bin/jest --runInBand"
+    "test": "jest"
   },
   "keywords": [],
-  "author": "Michael Wells",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
-    "eslint": "^6.3.0",
-    "eslint-loader": "^3.0.0",
+    "eslint": "^6.6.0",
+    "eslint-loader": "^3.0.2",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "style-loader": "^1.0.0",
@@ -32,13 +31,5 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Michael-Wayne-Wells/npm-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Michael-Wayne-Wells/npm-template/issues"
-  },
-  "homepage": "https://github.com/Michael-Wayne-Wells/npm-template#readme"
+  }
 }
