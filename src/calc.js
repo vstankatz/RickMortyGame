@@ -7,4 +7,7 @@ export class User {
   mercuryAge(age) {
     return Math.floor(age * (1 / .24));
   }
+  venusAge(age) {
+    
+  }
 }
