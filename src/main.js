@@ -17,6 +17,8 @@ $(document).ready(function() {
 
     Object.keys(user.aging).forEach(key=>{
       $('#aging-selector').append("<option value=" + `${user.aging[key]}` + ">" + `${key}` + "</option>");
+
+      
     });
   });
 });
