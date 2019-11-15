@@ -1,8 +1,9 @@
-import { User } from "./../calc.js";
+import { User } from "./../src/calc.js";
 
 describe('user', () => {
 
   test('users age on mercury', () => {
-    expect(user.mercuryAge().equalTo(user.age * (1/.24)))
+    let user = new User('mike', 32);
+    expect(user.mercuryAge(user.age)).toEqual(133);
   })
 })
