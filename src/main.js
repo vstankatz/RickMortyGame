@@ -13,12 +13,17 @@ $(document).ready(function() {
     const userAge = $('#user-age').val();
     const userDeathAge = $('#user-death-age').val();
     const user = new User(userName, userAge, userDeathAge);
+
     $('#welcome-name').text(user.name);
     $('#current-age').text(user.age);
     $('#years-left').text(user.deathClock(user.death, user.age));
     $('.age-calc').show();
-    $('.welcome').show();
     $('.user-form').hide();
+    if(user.age > user.death) {
+      $(".expired").show();
+    } else {
+      $('.welcome').show();
+    }
 
     Object.keys(user.aging).forEach(key=>{
       $('#aging-selector').append("<option value=" + `${user.aging[key]}` + ">" + `${key}` + "</option>");
