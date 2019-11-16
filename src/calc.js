@@ -14,7 +14,7 @@ export class User {
   planetAge(age, aging) {
     return Math.floor(age * aging);
   }
-  
+
   deathClock(death, age) {
     let yearsLeft = Math.floor(death - age);
     let pastExp = Math.floor(age - death);

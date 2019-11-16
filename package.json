@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "galactic-space-calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "find your age on other planets!",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michael Wells",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
