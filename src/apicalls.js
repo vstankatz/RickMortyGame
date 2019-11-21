@@ -58,7 +58,7 @@ export class Quotes {
       fetch('https://icanhazdadjoke.com/slack',
         { headers: {
       'Content-Type': 'application/json'}
-    });
+    }); //THIS IS HERE TO GRAB ACCEPT HEADER /SLACK HELPS AS DOES HEADERS:... ONLY BOTH WORKED FOR SOME REASON, NOT ONE.
 
       let jsonifiedResponse = await response.json();
       console.log(jsonifiedResponse);

@@ -8,11 +8,11 @@ import './styles.css';
 
 const quote = new Quotes();
 const mainCharacter = new Characters();
-let charName = mainCharacter.name[1];
+// let charName = mainCharacter.name[1];
 function getElements(response) {
-  $(`img#${charName}`).attr('src', response.image);
-  console.log(response.image);
-  console.log(charName);
+  // $(`img#${charName}`).attr('src', response.image);
+  console.log(response);
+  // console.log(charName);
 }
 
 (async function characterGrab(character) {
