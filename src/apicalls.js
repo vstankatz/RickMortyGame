@@ -10,6 +10,7 @@ export class Characters {
     try {
       let response = await fetch(`https://rickandmortyapi.com/api/character/${character}`)
       let jsonifiedResponse = await response.json();
+      console.log(jsonifiedResponse);
       return jsonifiedResponse;
     } catch(error) {
 
@@ -29,5 +30,71 @@ export class Characters {
     } catch(error) {
       console.error("There was an error handling your request: " + error.message);
     }
+  }
+
+
+
+}
+
+export class Quotes {
+
+
+  async getNorris() {
+    try {
+      let response = await
+      fetch(`http://api.icndb.com/jokes/random`)
+      let jsonifiedResponse = await response.json();
+      console.log(jsonifiedResponse);
+      return jsonifiedResponse;
+    }catch(error) {
+      console.error("There was an error handling your request: " + error.message);
+
+    }
+  }
+
+  async getDad() {
+    try {
+      let response = await
+      fetch('https://icanhazdadjoke.com/slack',
+        { headers: {
+      'Content-Type': 'application/json'}
+    });
+
+      let jsonifiedResponse = await response.json();
+      console.log(jsonifiedResponse);
+      return jsonifiedResponse;
+    }catch(error) {
+      console.error("There was an error handling your request: " + error.message);
+
+    }
+
+  }
+  async getKanye() {
+    try {
+      let response = await
+      fetch('https://api.kanye.rest/');
+
+      let jsonifiedResponse = await response.json();
+      console.log(jsonifiedResponse);
+      return jsonifiedResponse;
+    }catch(error) {
+      console.error("There was an error handling your request: " + error.message);
+
+    }
+
+  }
+
+  async getStars() {
+    try {
+      let response = await
+      fetch('http://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote');
+      let jsonifiedResponse = await response.json();
+      console.log(jsonifiedResponse);
+      return jsonifiedResponse;
+    }catch(error) {
+      console.error("There was an error handling your request: " + error.message);
+
+    }
+
   }
 }

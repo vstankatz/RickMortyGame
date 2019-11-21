@@ -1,0 +1,14 @@
+.sceneOne, .sceneTwo, .sceneThree {
+  display: none;
+}
+
+.main {
+  float: left;
+  margin-right: 30px;
+  width: 300px;
+}
+
+.rickTrickDiv {
+  float: right;
+  width: 300px;
+}
